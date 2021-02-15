@@ -1,0 +1,240 @@
+/*
+fb-text: #737373;
+bg: #000;
+color: #8c8c8c;
+learn more: #0071eb;
+need help: #b3b3b3;
+button: #e50914;
+input bg : #333;
+input focus: #454545
+*/
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/Helvetica-Light.ttf");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/Helvetica-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/Helvetica-Bold.ttf");
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  background-color: #000;
+  color: #8c8c8c;
+}
+
+.logo {
+  margin-top: 3%;
+  margin-left: 3%;
+}
+
+.logo img {
+  height: 20px;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  padding: 30px 5%;
+}
+
+.content h1 {
+  color: #fff;
+  font-size: 32px;
+}
+
+.content .form {
+  margin-top: 20px;
+}
+
+.content .form .inputWrapper .input-inner {
+  position: relative;
+}
+
+.content .form .inputWrapper .input-inner label {
+  font-size: 14px;
+  position: absolute;
+  left: 20px;
+  top: 17px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.content .form .inputWrapper .input-inner input:focus + label,
+.content .form .inputWrapper .input-inner input:valid + label {
+  -webkit-transform: translate3d(0, -10px, 0);
+          transform: translate3d(0, -10px, 0);
+  font-size: 11px;
+}
+
+.content .form .inputWrapper input {
+  background-color: #333;
+  border: 0;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.content .form .inputWrapper input:focus {
+  background-color: #454545;
+}
+
+.content .form .inputWrapper.email {
+  margin-bottom: 16px;
+}
+
+.content .form button {
+  background-color: #e50914;
+  padding: 16px;
+  width: 100%;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.content .form button:active {
+  opacity: 0.8;
+}
+
+.content .form .bottom-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 13px;
+  color: #b3b3b3;
+}
+
+.content .form .fb-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  font-size: 13px;
+}
+
+.content .form .fb-login img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.content .new-to-netflix {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.content .new-to-netflix a {
+  color: #fff;
+}
+
+.content .captcha-text {
+  font-size: 13px;
+  margin-top: 20px;
+  line-height: 16px;
+}
+
+.content .captcha-text a {
+  color: #0071eb;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border-radius: 4px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #737373;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 3px;
+  height: 8px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/*# sourceMappingURL=index.css.map */

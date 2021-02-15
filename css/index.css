@@ -108,6 +108,7 @@ a:hover {
 }
 
 .content .form button {
+  cursor: pointer;
   background-color: #e50914;
   padding: 16px;
   width: 100%;
@@ -175,13 +176,17 @@ a:hover {
 .container {
   display: block;
   position: relative;
-  padding-left: 35px;
+  padding-left: 20px;
   margin-bottom: 12px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.container div {
+  margin-top: 2px;
 }
 
 /* Hide the browser's default checkbox */
